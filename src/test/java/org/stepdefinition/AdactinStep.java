@@ -16,19 +16,19 @@ public class AdactinStep {
 
 	@Given("I am in Adactin hotel page")
 	public void i_am_in_Adactin_hotel_page() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("http://adactinhotelapp.com/");
+		//WebDriverManager.chromedriver().setup();
+		//driver = new ChromeDriver();
+		//driver.get("http://adactinhotelapp.com/");
 	}
 
 	@When("I should login with {string} and {string}")
 	public void i_should_login_with_and(String user, String pass) {
-		WebElement txtusername = driver.findElement(By.id("username"));
-		txtusername.sendKeys(user);
-		WebElement txtpassword = driver.findElement(By.id("password"));
-		txtpassword.sendKeys(pass);
-		WebElement btnLogin = driver.findElement(By.id("login"));
-		btnLogin.click();
+		//WebElement txtusername = driver.findElement(By.id("username"));
+		//txtusername.sendKeys(user);
+		//WebElement txtpassword = driver.findElement(By.id("password"));
+		//txtpassword.sendKeys(pass);
+		//WebElement btnLogin = driver.findElement(By.id("login"));
+		//btnLogin.click();
 	}
 
 	@When("I should search hotels with {string}, {string},{string},{string},{string},{string},{string},{string}")
